@@ -10,8 +10,8 @@ nave bar style
 nav {
   display: flex;
   justify-content: space-between;
-  padding-top: 40px;
-  padding-left:  120px;
+  padding: 40px 120px;
+ 
   margin-bottom: 72px;
   
 }
@@ -47,6 +47,10 @@ font-size: 16px;
 }
 .header-banner{
     display: flex;
+    background-image: url(../images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-position: 90% 50%  ;
+    background-size: contain;
 }
 .header-content{
     padding-left: 120px;
@@ -62,6 +66,38 @@ font-size: 16px;
     justify-content: center;
     margin-top: 135px;
     margin-bottom: 135px;
-
 }
-
+/* popular products styles */
+.popular-collection-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.product img{
+  margin-bottom: 16px;
+}
+.product-title{
+  margin: 0;
+}
+.product .price{
+  margin-top: 6px;
+  margin-bottom: 0;
+}
+.fa-solid.fa-star {
+  color: #FB8200;
+}
+.fa-solid.fa-star-half-stroke {
+  color: #FB8200;
+}
+.rating span {
+  font-weight: 700;
+font-size: 14px;
+color:  #5E6366;
+}
+.product-info{
+  font-weight: 700;
+  font-size: 14px;
+  color: #787885;
+}
+.product-info p{
+  margin: 0;
+}
